@@ -17,7 +17,6 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#research">Research</a></li>
-        <li><a href="#highlights">Highlights</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -116,33 +115,6 @@
       </div>
     </section>
 
-    <section id="highlights" class="section section-highlights">
-      <div class="container">
-        <h2 class="section-title">Research Highlights</h2>
-        <p class="section-lead">Key figures from recent first-author work on LLM tutoring and feedback.</p>
-        <div class="highlights-grid">
-          <a class="highlight-card highlight-teal" href="https://arxiv.org/abs/2605.16207" target="_blank" rel="noopener">
-            <div class="highlight-figure">
-              <img src="assets/images/papers/bea-pipeline.png" alt="Figure 1: LLM tutoring evaluation pipeline across solution types">
-            </div>
-            <div class="highlight-content">
-              <h3>Confirming Correct, Missing the Rest</h3>
-              <p>Models excel on optimal steps but struggle on valid alternatives and incorrect solutions.</p>
-            </div>
-          </a>
-          <a class="highlight-card highlight-violet" href="https://arxiv.org/abs/2603.27076" target="_blank" rel="noopener">
-            <div class="highlight-figure">
-              <img src="assets/images/papers/verification-hurts.png" alt="Figure 1: Multi-agent tutoring with knowledge-graph-grounded hints">
-            </div>
-            <div class="highlight-content">
-              <h3>When Verification Hurts</h3>
-              <p>Multi-agent verification helps when feedback is error-prone — and hurts when it is already reliable.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
     <section id="publications" class="section">
       <div class="container">
         <h2 class="section-title">Publications</h2>
@@ -161,7 +133,8 @@
             <div class="paper-body">
               <div class="paper-badges">
                 <span class="badge badge-first">First Author</span>
-                <span class="badge badge-type">Preprint</span>
+                <span class="badge badge-accepted">Accepted</span>
+                <span class="badge badge-type badge-conference">BEA @ ACL 2026</span>
               </div>
               <h4 class="paper-title">
                 Confirming Correct, Missing the Rest: LLM Tutoring Agents Struggle Where Feedback Matters Most
@@ -169,7 +142,10 @@
               <p class="paper-authors">
                 <strong>Tahreem Yasir</strong>, Wenbo Li, Sam Gilson, Sutapa Dey Tithi, Xiaoyi Tian, Tiffany Barnes
               </p>
-              <p class="paper-venue">arXiv preprint arXiv:2605.16207, 2026</p>
+              <p class="paper-venue">
+                Accepted at the 21st Workshop on Innovative Use of NLP for Building Educational Applications (BEA 2026),
+                co-located with ACL 2026 · arXiv:2605.16207
+              </p>
               <p class="paper-abstract">
                 We benchmark seven LLM feedback agents in propositional logic using knowledge-graph-derived
                 ground truth across 10,836 solution–feedback pairs. Models excel on optimal steps but
