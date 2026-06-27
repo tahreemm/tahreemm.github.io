@@ -1,0 +1,4 @@
+.venv/
+assets/images/papers/*.pdf
+assets/images/papers/*-render.png
+assets/images/papers/bea-from-pdf.png

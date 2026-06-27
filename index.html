@@ -17,6 +17,7 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#research">Research</a></li>
+        <li><a href="#highlights">Highlights</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -25,6 +26,7 @@
 
   <main>
     <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-content">
         <p class="hero-eyebrow">PhD Candidate · Computer Science</p>
         <h1>Tahreem Yasir</h1>
@@ -89,21 +91,21 @@
       <div class="container">
         <h2 class="section-title">Research Themes</h2>
         <div class="theme-grid">
-          <article class="theme-card">
+          <article class="theme-card theme-card-teal">
             <h3>LLM Tutoring &amp; Feedback</h3>
             <p>
               Evaluating whether LLM agents can distinguish optimal, valid-alternative, and incorrect
               student reasoning — and when multi-agent verification helps or hurts tutoring quality.
             </p>
           </article>
-          <article class="theme-card">
+          <article class="theme-card theme-card-amber">
             <h3>Computing Education</h3>
             <p>
               Systematic reviews and teacher-facing frameworks for integrating student-facing LLM tools
               in undergraduate and secondary computing classrooms.
             </p>
           </article>
-          <article class="theme-card">
+          <article class="theme-card theme-card-violet">
             <h3>Knowledge-Grounded AI</h3>
             <p>
               Hybrid architectures that combine knowledge graphs and expert solution paths with LLMs
@@ -114,117 +116,168 @@
       </div>
     </section>
 
+    <section id="highlights" class="section section-highlights">
+      <div class="container">
+        <h2 class="section-title">Research Highlights</h2>
+        <p class="section-lead">Key figures from recent first-author work on LLM tutoring and feedback.</p>
+        <div class="highlights-grid">
+          <a class="highlight-card highlight-teal" href="https://arxiv.org/abs/2605.16207" target="_blank" rel="noopener">
+            <div class="highlight-figure">
+              <img src="assets/images/papers/bea-pipeline.png" alt="Figure 1: LLM tutoring evaluation pipeline across solution types">
+            </div>
+            <div class="highlight-content">
+              <h3>Confirming Correct, Missing the Rest</h3>
+              <p>Models excel on optimal steps but struggle on valid alternatives and incorrect solutions.</p>
+            </div>
+          </a>
+          <a class="highlight-card highlight-violet" href="https://arxiv.org/abs/2603.27076" target="_blank" rel="noopener">
+            <div class="highlight-figure">
+              <img src="assets/images/papers/verification-hurts.png" alt="Figure 1: Multi-agent tutoring with knowledge-graph-grounded hints">
+            </div>
+            <div class="highlight-content">
+              <h3>When Verification Hurts</h3>
+              <p>Multi-agent verification helps when feedback is error-prone — and hurts when it is already reliable.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section id="publications" class="section">
       <div class="container">
         <h2 class="section-title">Publications</h2>
 
         <div class="pub-group">
-          <div class="pub-group-header">
+          <div class="pub-group-header pub-group-header-first">
             <h3>First-Author Papers</h3>
             <p class="pub-group-note">Listed in reverse chronological order.</p>
           </div>
 
-          <article class="paper paper-featured">
-            <div class="paper-badges">
-              <span class="badge badge-first">First Author</span>
-              <span class="badge badge-type">Preprint</span>
-            </div>
-            <h4 class="paper-title">
-              Confirming Correct, Missing the Rest: LLM Tutoring Agents Struggle Where Feedback Matters Most
-            </h4>
-            <p class="paper-authors">
-              <strong>Tahreem Yasir</strong>, Wenbo Li, Sam Gilson, Sutapa Dey Tithi, Xiaoyi Tian, Tiffany Barnes
-            </p>
-            <p class="paper-venue">arXiv preprint arXiv:2605.16207, 2026</p>
-            <p class="paper-abstract">
-              We benchmark seven LLM feedback agents in propositional logic using knowledge-graph-derived
-              ground truth across 10,836 solution–feedback pairs. Models excel on optimal steps but
-              systematically over-reject valid alternatives and over-validate incorrect solutions —
-              precisely where adaptive tutoring matters most.
-            </p>
-            <div class="paper-links">
-              <a href="https://arxiv.org/abs/2605.16207" target="_blank" rel="noopener">arXiv</a>
-              <a href="https://github.com/tahreemm/BEA_2026" target="_blank" rel="noopener">Code</a>
+          <article class="paper paper-featured paper-with-figure">
+            <a class="paper-figure" href="https://arxiv.org/abs/2605.16207" target="_blank" rel="noopener">
+              <img src="assets/images/papers/bea-pipeline.png" alt="Figure 1: LLM tutoring evaluation pipeline">
+              <span class="paper-figure-caption">Figure 1 · Tutoring evaluation pipeline</span>
+            </a>
+            <div class="paper-body">
+              <div class="paper-badges">
+                <span class="badge badge-first">First Author</span>
+                <span class="badge badge-type">Preprint</span>
+              </div>
+              <h4 class="paper-title">
+                Confirming Correct, Missing the Rest: LLM Tutoring Agents Struggle Where Feedback Matters Most
+              </h4>
+              <p class="paper-authors">
+                <strong>Tahreem Yasir</strong>, Wenbo Li, Sam Gilson, Sutapa Dey Tithi, Xiaoyi Tian, Tiffany Barnes
+              </p>
+              <p class="paper-venue">arXiv preprint arXiv:2605.16207, 2026</p>
+              <p class="paper-abstract">
+                We benchmark seven LLM feedback agents in propositional logic using knowledge-graph-derived
+                ground truth across 10,836 solution–feedback pairs. Models excel on optimal steps but
+                systematically over-reject valid alternatives and over-validate incorrect solutions —
+                precisely where adaptive tutoring matters most.
+              </p>
+              <div class="paper-links">
+                <a href="https://arxiv.org/abs/2605.16207" target="_blank" rel="noopener">arXiv</a>
+                <a href="https://github.com/tahreemm/BEA_2026" target="_blank" rel="noopener">Code</a>
+              </div>
             </div>
           </article>
 
-          <article class="paper paper-featured">
-            <div class="paper-badges">
-              <span class="badge badge-first">First Author</span>
-              <span class="badge badge-type">Preprint</span>
-            </div>
-            <h4 class="paper-title">
-              When Verification Hurts: Asymmetric Effects of Multi-Agent Feedback in Logic Proof Tutoring
-            </h4>
-            <p class="paper-authors">
-              <strong>Tahreem Yasir</strong>, Sutapa Dey Tithi, Benyamin Tabarsi, Dmitri Droujkov, Sam Gilson,
-              Yasitha Rajapaksha, Xiaoyi Tian, DongKuan Xu, Tiffany Barnes, Arun Ramesh
-            </p>
-            <p class="paper-venue">arXiv preprint arXiv:2603.27076, 2026</p>
-            <p class="paper-abstract">
-              We introduce a knowledge-graph–grounded benchmark of 516 proof states and evaluate
-              role-specialized tutoring pipelines. Verification improves outcomes when upstream feedback
-              is error-prone, but degrades performance when feedback is already reliable — revealing a
-              shared complexity ceiling for step-level tutoring.
-            </p>
-            <div class="paper-links">
-              <a href="https://arxiv.org/abs/2603.27076" target="_blank" rel="noopener">arXiv</a>
+          <article class="paper paper-featured paper-with-figure">
+            <a class="paper-figure" href="https://arxiv.org/abs/2603.27076" target="_blank" rel="noopener">
+              <img src="assets/images/papers/verification-hurts.png" alt="Figure 1: Multi-agent tutoring with KG-grounded hints">
+              <span class="paper-figure-caption">Figure 1 · Multi-agent tutoring pipeline</span>
+            </a>
+            <div class="paper-body">
+              <div class="paper-badges">
+                <span class="badge badge-first">First Author</span>
+                <span class="badge badge-type">Preprint</span>
+              </div>
+              <h4 class="paper-title">
+                When Verification Hurts: Asymmetric Effects of Multi-Agent Feedback in Logic Proof Tutoring
+              </h4>
+              <p class="paper-authors">
+                <strong>Tahreem Yasir</strong>, Sutapa Dey Tithi, Benyamin Tabarsi, Dmitri Droujkov, Sam Gilson,
+                Yasitha Rajapaksha, Xiaoyi Tian, DongKuan Xu, Tiffany Barnes, Arun Ramesh
+              </p>
+              <p class="paper-venue">arXiv preprint arXiv:2603.27076, 2026</p>
+              <p class="paper-abstract">
+                We introduce a knowledge-graph–grounded benchmark of 516 proof states and evaluate
+                role-specialized tutoring pipelines. Verification improves outcomes when upstream feedback
+                is error-prone, but degrades performance when feedback is already reliable — revealing a
+                shared complexity ceiling for step-level tutoring.
+              </p>
+              <div class="paper-links">
+                <a href="https://arxiv.org/abs/2603.27076" target="_blank" rel="noopener">arXiv</a>
+              </div>
             </div>
           </article>
         </div>
 
         <div class="pub-group pub-group-coauthored">
-          <div class="pub-group-header">
+          <div class="pub-group-header pub-group-header-coauthor">
             <h3>Co-Authored Papers</h3>
             <p class="pub-group-note">Collaborative work; first author listed first.</p>
           </div>
 
-          <article class="paper">
-            <div class="paper-badges">
-              <span class="badge badge-coauthor">Co-Author</span>
-              <span class="badge badge-type">Preprint</span>
-            </div>
-            <h4 class="paper-title">
-              Herald of Advancement, Disruption, or Both: A Systematic Literature Review on Student-Facing LLM Tools in Undergraduate Computing Education
-            </h4>
-            <p class="paper-authors">
-              Benyamin Tabarsi, <strong>Tahreem Yasir</strong>, Heidi Reichert, Xiaoyi Tian, Shiva Gadireddy,
-              Clara DiMarco, Daniel Briceno, Tiffany Barnes
-            </p>
-            <p class="paper-venue">TechRxiv preprint, 2025 · Under review at <em>Computers and Education: Artificial Intelligence</em></p>
-            <p class="paper-abstract">
-              A PRISMA-guided review of 52 papers on purpose-built, student-facing LLM tools in
-              undergraduate computing education — covering pedagogical roles, technical design,
-              evaluation methods, and impacts on learners.
-            </p>
-            <div class="paper-links">
-              <a href="https://doi.org/10.5281/zenodo.18190635" target="_blank" rel="noopener">Zenodo</a>
+          <article class="paper paper-with-figure">
+            <a class="paper-figure" href="https://doi.org/10.5281/zenodo.18190635" target="_blank" rel="noopener">
+              <img src="assets/images/papers/herald-slr.png" alt="Figure 1: PRISMA flow diagram for systematic literature review">
+              <span class="paper-figure-caption">Figure 1 · PRISMA review flow</span>
+            </a>
+            <div class="paper-body">
+              <div class="paper-badges">
+                <span class="badge badge-coauthor">Co-Author</span>
+                <span class="badge badge-type">Preprint</span>
+              </div>
+              <h4 class="paper-title">
+                Herald of Advancement, Disruption, or Both: A Systematic Literature Review on Student-Facing LLM Tools in Undergraduate Computing Education
+              </h4>
+              <p class="paper-authors">
+                Benyamin Tabarsi, <strong>Tahreem Yasir</strong>, Heidi Reichert, Xiaoyi Tian, Shiva Gadireddy,
+                Clara DiMarco, Daniel Briceno, Tiffany Barnes
+              </p>
+              <p class="paper-venue">TechRxiv preprint, 2025 · Under review at <em>Computers and Education: Artificial Intelligence</em></p>
+              <p class="paper-abstract">
+                A PRISMA-guided review of 52 papers on purpose-built, student-facing LLM tools in
+                undergraduate computing education — covering pedagogical roles, technical design,
+                evaluation methods, and impacts on learners.
+              </p>
+              <div class="paper-links">
+                <a href="https://doi.org/10.5281/zenodo.18190635" target="_blank" rel="noopener">Zenodo</a>
+              </div>
             </div>
           </article>
 
-          <article class="paper">
-            <div class="paper-badges">
-              <span class="badge badge-coauthor">Co-Author</span>
-              <span class="badge badge-type">Conference</span>
+          <article class="paper paper-with-figure">
+            <div class="paper-figure paper-figure-static">
+              <img src="assets/images/papers/aied-framework.svg" alt="Figure 1: Framework for LLM integration in secondary computing classrooms">
+              <span class="paper-figure-caption">Figure 1 · Six-phase integration framework</span>
             </div>
-            <h4 class="paper-title">
-              A Framework for LLM Integration in Secondary Education: Insights from Computing Teachers
-            </h4>
-            <p class="paper-authors">
-              Heidi Reichert, <strong>Tahreem Yasir</strong>, Malvika Satyavolu, Tiffany Barnes
-            </p>
-            <p class="paper-venue">International Conference on Artificial Intelligence in Education (AIED), 2026</p>
-            <p class="paper-abstract">
-              Through interviews and surveys with 11 secondary computing teachers, we develop an
-              empirically grounded framework of 27 implementation steps across six phases — Prepare,
-              Adapt Curriculum, Lead, Assess, Synthesize, and Share — for integrating LLM tools in classrooms.
-            </p>
+            <div class="paper-body">
+              <div class="paper-badges">
+                <span class="badge badge-coauthor">Co-Author</span>
+                <span class="badge badge-type badge-conference">Conference</span>
+              </div>
+              <h4 class="paper-title">
+                A Framework for LLM Integration in Secondary Education: Insights from Computing Teachers
+              </h4>
+              <p class="paper-authors">
+                Heidi Reichert, <strong>Tahreem Yasir</strong>, Malvika Satyavolu, Tiffany Barnes
+              </p>
+              <p class="paper-venue">International Conference on Artificial Intelligence in Education (AIED), 2026</p>
+              <p class="paper-abstract">
+                Through interviews and surveys with 11 secondary computing teachers, we develop an
+                empirically grounded framework of 27 implementation steps across six phases — Prepare,
+                Adapt Curriculum, Lead, Assess, Synthesize, and Share — for integrating LLM tools in classrooms.
+              </p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section section-alt">
+    <section id="contact" class="section section-alt section-contact">
       <div class="container contact-block">
         <h2 class="section-title">Contact</h2>
         <p>
