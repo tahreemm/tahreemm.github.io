@@ -10,15 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="page-home">
   <header class="site-header">
     <nav class="nav">
-      <a class="nav-logo" href="#">Tahreem Yasir</a>
+      <a class="nav-logo" href="index.html">Tahreem Yasir</a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html" aria-current="page">About</a></li>
+        <li><a href="research.html">Research Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
       </ul>
     </nav>
   </header>
@@ -27,6 +26,7 @@
     <section class="hero">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-content">
+        <div class="profile-monogram" aria-hidden="true">TY</div>
         <p class="hero-eyebrow">PhD Candidate · Computer Science</p>
         <h1>Tahreem Yasir</h1>
         <p class="hero-lead">
@@ -83,6 +83,35 @@
             </ul>
           </aside>
         </div>
+      </div>
+    </section>
+
+    <section id="updates" class="section section-updates">
+      <div class="container">
+        <h2 class="section-title">Recent Updates</h2>
+        <ol class="updates-list">
+          <li>
+            <time datetime="2026">2026</time>
+            <div>
+              <strong>Paper accepted at BEA @ ACL 2026</strong>
+              <p>Our study of seven LLM tutoring agents examines where feedback systems succeed—and where they miss valid or incorrect student reasoning.</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026">2026</time>
+            <div>
+              <strong>New preprint on multi-agent verification</strong>
+              <p>We find that verification can improve weak upstream feedback while degrading feedback that is already reliable.</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2025">2025</time>
+            <div>
+              <strong>Systematic review released</strong>
+              <p>Our review synthesizes 52 studies of student-facing LLM tools in undergraduate computing education.</p>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 

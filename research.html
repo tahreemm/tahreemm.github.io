@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research projects by Tahreem Yasir on LLM tutoring, computing education, and knowledge-grounded AI.">
+  <title>Research Projects · Tahreem Yasir</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-research">
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-logo" href="index.html">Tahreem Yasir</a>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html" aria-current="page">Research Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <aside class="hero">
+      <div class="hero-content">
+        <div class="profile-monogram" aria-hidden="true">TY</div>
+        <p class="hero-eyebrow">PhD Candidate · Computer Science</p>
+        <h1>Tahreem Yasir</h1>
+        <p class="hero-lead">I study how large language models can support learning in structured domains.</p>
+        <p class="hero-affiliation">North Carolina State University · Raleigh, NC</p>
+        <div class="hero-links">
+          <a href="https://scholar.google.com/citations?user=LEn3nlgAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/tahreem-yasir-526a3111/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/tahreemm" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:tahreemyasirr@gmail.com">Email</a>
+        </div>
+      </div>
+    </aside>
+    <section class="section page-intro">
+      <div class="container">
+        <p class="page-kicker">Research Projects</p>
+        <h2 class="section-title">Building AI systems that support learning—not just answer questions.</h2>
+        <p class="page-summary">These projects describe the broader research programs behind my papers: the questions we ask, the systems we build, and the educational problems we aim to solve.</p>
+      </div>
+    </section>
+    <section class="section projects-section">
+      <div class="container">
+        <h2 class="section-title">Current Projects</h2>
+        <div class="project-list">
+          <article class="project">
+            <div class="project-meta"><span>01</span><span>LLM Tutoring</span></div>
+            <div class="project-content">
+              <h3>Reliable Feedback for Multiple Solution Paths</h3>
+              <p class="project-lead">How can a tutoring agent recognize that a student's unexpected step is still correct?</p>
+              <figure class="project-visual"><img src="assets/images/papers/bea-pipeline.png" alt="LLM tutoring evaluation pipeline" loading="lazy"><figcaption>Knowledge-grounded evaluation pipeline for tutoring feedback.</figcaption></figure>
+              <p>This project evaluates LLM feedback in propositional logic using knowledge-graph-derived ground truth. It distinguishes optimal steps, valid alternatives, and incorrect reasoning so that feedback quality can be measured where adaptive tutoring matters most.</p>
+              <dl class="project-details"><div><dt>Focus</dt><dd>Step-level feedback evaluation</dd></div><div><dt>Methods</dt><dd>Knowledge graphs, benchmark design, LLM evaluation</dd></div></dl>
+              <a class="project-output" href="publications.html">See related publications →</a>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-meta"><span>02</span><span>Multi-Agent AI</span></div>
+            <div class="project-content">
+              <h3>When Verification Helps—and When It Hurts</h3>
+              <p class="project-lead">Does adding a second agent actually make tutoring feedback more reliable?</p>
+              <figure class="project-visual"><img src="assets/images/papers/verification-hurts.png" alt="Multi-agent tutoring and verification pipeline" loading="lazy"><figcaption>Role-specialized multi-agent tutoring pipeline.</figcaption></figure>
+              <p>This work studies role-specialized tutoring pipelines in which one agent generates feedback and another verifies it. The project investigates how upstream quality, problem complexity, and agent roles affect the final pedagogical response.</p>
+              <dl class="project-details"><div><dt>Focus</dt><dd>Multi-agent feedback pipelines</dd></div><div><dt>Methods</dt><dd>Controlled experiments, error analysis, proof-state benchmarks</dd></div></dl>
+              <a class="project-output" href="publications.html">See related publications →</a>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-meta"><span>03</span><span>Computing Education</span></div>
+            <div class="project-content">
+              <h3>Responsible LLM Integration in Classrooms</h3>
+              <p class="project-lead">What do teachers and students need for LLM tools to support—not displace—learning?</p>
+              <div class="project-gallery">
+                <figure class="project-visual"><img src="assets/images/papers/aied-framework.svg" alt="Six-phase framework for LLM integration in classrooms" loading="lazy"><figcaption>Teacher-informed integration framework.</figcaption></figure>
+                <figure class="project-visual"><img src="assets/images/papers/herald-slr.png" alt="PRISMA flow for systematic review" loading="lazy"><figcaption>Systematic review process.</figcaption></figure>
+              </div>
+              <p>This research synthesizes evidence about student-facing LLM tools and develops teacher-informed guidance for classroom adoption. It connects technical design decisions with pedagogy, assessment, and responsible implementation.</p>
+              <dl class="project-details"><div><dt>Focus</dt><dd>Student-facing tools and teacher practice</dd></div><div><dt>Methods</dt><dd>Systematic review, interviews, surveys, framework development</dd></div></dl>
+              <a class="project-output" href="publications.html">See related publications →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section research-questions">
+      <div class="container">
+        <h2 class="section-title">Questions I Explore</h2>
+        <ul class="question-list">
+          <li>How should tutoring agents respond when a student takes an unexpected but valid path?</li>
+          <li>When does adding an LLM verifier improve feedback, and when does it introduce new errors?</li>
+          <li>How can teachers integrate student-facing AI while preserving productive struggle?</li>
+        </ul>
+        <p class="next-page-link"><a href="publications.html">Explore related publications →</a></p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container"><p>&copy; <span id="year"></span> Tahreem Yasir · Hosted on GitHub Pages</p></div></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
